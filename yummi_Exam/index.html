@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Start Browser Tab Name -->
+	<title>Yummy</title>
+	<!-- End Browser Tab Name -->
+	<!-- Start Linking Browser Tab Image -->
+	<link rel="icon" href="images/logo.png">
+	<!-- End Linking Browser Tab Image -->
+	<!-- Start Linking Font Awosome Libirary -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- End Linking Font Awosome Libirary -->
+	<!-- Start Linking Bootstrap Libirary -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- End Linking Bootstrap Libirary -->
+	<!-- Start Linking Font From Google -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- End Linking Font From Google -->
+	<!-- Start Linking Stylesheet File -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- End Linking Stylesheet File -->
+<body>
+	<!-- Start Loading Screen -->
+	<div class="loading-screen position-fixed justify-content-center align-items-center">
+		<i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+	</div>
+	<!-- End Loading Screen -->
+	<!-- Start Sidebar -->
+	<section>
+		<div class="sideBar">
+			<div class="logo py-3">
+				<img src="images/logo.png">
+			</div>
+			<div class="toggleMenu">
+				<i class="fa fa-align-justify fa-2x"></i>
+			</div>
+			<div class="socialIcon">
+					<div>
+						<i class="fas fa-globe fa-2x"></i>
+					</div>
+					<div>
+						<i class="fas fa-share-alt fa-2x"></i>
+					</div>
+			</div>
+		</div>
+		<div class="navBar">
+			<div class="nav-item">
+				<ul class="list-unstyled">
+					<li class="navTab1"><a data-list="search" class="text-decoration-none pt-5 mt-5">Search</a></li>
+					<li class="navTab2"><a data-list="categories" class="text-decoration-none pt-5 mt-5">Categories</a></li>
+					<li class="navTab3"><a data-list="a" class="text-decoration-none pt-5 mt-5">Area</a></li>
+					<li class="navTab4"><a data-list="i" class="text-decoration-none pt-5 mt-5">Ingredients</a></li>
+					<li class="navTab5"><a data-list="contact" class="text-decoration-none pt-5 mt-5">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="navbarSocialItem">
+				<a><i class="fab fa-facebook-f text-white"></i></a>
+				<a><i class="fab fa-twitter text-white"></i></a>
+				<a><i class="fas fa-globe text-white"></i></a>
+				<div class="pt-3">
+					<span>Copyrights <span>&copy;</span> 2022 All Rights Reserved.</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Sidebar -->
+	<!-- Start Display Meals -->
+	<section class="py-5">
+		<div id="searchBox" class="container justify-content-center">
+		</div>
+		<div class="container">
+			<div class="row" id="recipes">
+			</div>
+		</div>
+		<div class="container py-2 mt-5 position-relative">
+			<div class="loadingBox">
+				<div class="sm-loading position-absolute">
+					<i class="fa fa-spinner fa-spin fa-5x"></i>
+				</div>
+			</div>
+			<div class="row mt-5" id="rowDisplay">
+			</div>
+		</div>
+	</section>
+	<!-- End Display Meals -->
+	<!-- Start Linking JavaScript Files -->
+	<!-- Start Linking Jquery Libirary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- End Linking Jquery Libirary -->
+	<!-- Start Linking Bootstrap Javascript Libirary Files -->
+	<script src="js/bootstrap.bundle.js"></script>
+	<!-- End Linking Bootstrap Javascript Libirary Files -->
+	<!-- Start Linking Javascript Sheet -->
+	<script src="js/main.js"></script>
+	<!-- End Linking Javascript Sheet -->
+	<!-- End Linking JavaScript Files -->
+</body>
+
+</html>

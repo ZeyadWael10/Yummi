@@ -1,0 +1,285 @@
+/* Start Global Styling */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+:root {
+	--mainColor: #0d0d0d;
+	--secondaryColor: #f8f6f6;
+}
+
+body {
+	background-color: var(--mainColor);
+	overflow: hidden;
+}
+
+i {
+	cursor: pointer;
+}
+
+/* End Global Styling */
+.open-menu {
+	transform: scale(1) !important;
+}
+
+.close-menu {
+	transform: translateX(-100%) !important;
+}
+
+.close-search {
+	transform: translateX(100%) !important;
+}
+
+.sideBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	z-index: 55555555;
+	background-color: var(--secondaryColor);
+	text-align: center;
+	transition: all 0.6s ease;
+}
+
+.logo img {
+	height: 50px;
+}
+
+.toggleMenu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.socialIcon {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 11;
+}
+
+.socialIcon>div {
+	padding-top: 10px;
+}
+
+.navBar {
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	left: 0px;
+	width: 250px;
+	height: 100vh;
+	z-index: 5555;
+	background-color: #000;
+	transform: translateX(-100%);
+	transition: all 0.6s ease;
+}
+
+.navBar ul {
+	padding-left: 30px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.navBar li {
+	opacity: 0;
+}
+
+.navBar ul li a {
+	color: var(--secondaryColor);
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.navBar ul li a:hover,
+.navbarSocialItem a:hover {
+	transition: all 0.3s;
+}
+
+.navbarSocialItem {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+}
+
+.navbarSocialItem a {
+	color: var(--secondaryColor);
+	padding-left: 15px;
+	font-size: 14px;
+}
+
+.navbarSocialItem span {
+	color: #999;
+}
+
+.search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateX(100%);
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	z-index: 9999999999999999999999;
+}
+
+.search .search-input {
+	position: absolute;
+	top: 300%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-bottom: 2px solid #ddd;
+	width: 400px;
+	outline: none;
+	padding: 14px;
+	background-color: transparent;
+}
+
+::placeholder {
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+}
+
+
+.country {
+	text-align: center;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 50px;
+	margin-right: 20px;
+	z-index: 55;
+}
+
+.category {
+	text-align: center;
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0;
+}
+
+#countries {
+	top: 0;
+	bottom: 0;
+	z-index: 666666666666666;
+}
+
+.country a:hover {
+	text-decoration: none;
+	padding-left: 20px;
+	color: aliceblue;
+}
+
+.container a {
+	color: gray;
+	text-decoration: none;
+}
+
+.container a:hover,
+nav a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.poster {
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: var(--mainColor);
+	font-weight: 800;
+	transition: all 1s;
+}
+
+.poster:hover .overlay {
+	top: 0;
+	transition: all 1s;
+}
+
+.form-control {
+	color: var(--secondaryColor) !important;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 0;
+}
+
+.form-control:focus {
+	outline: var(--mainColor);
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 0;
+	box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.fa-city {
+	color: #0099cc;
+}
+
+.fa-bowl-food {
+	color: #008080;
+}
+
+.d-flex {
+	flex-wrap: wrap;
+}
+
+.sectionSetting {
+	left: 15%;
+	z-index: 999;
+	top: 0;
+	padding-top: 30px;
+	background-color: var(--mainColor);
+}
+
+.loading-screen {
+	inset: 0;
+	z-index: 9999999999;
+	background-color: var(--mainColor);
+	display: flex;
+}
+
+
+.sm-loading {
+	z-index: 999;
+	inset: 0;
+	background-color: var(--mainColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondaryColor);
+	height: 100vh;
+}
+
+.loadingBox {
+	display: none;
+}
+
+.youtube {
+	background-color: #f70000;
+}
+
+#contact input {
+	box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1) !important;
+}
